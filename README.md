@@ -1,14 +1,14 @@
-# SaaS Subscription Cohort Analysis Dashboard | Opeyemi Okunmuyide
+# SaaS Subscription Cohort Analysis Dashboard
+
+**Author:** Opeyemi Okunmuyide
 
 ## Project Overview
 
-This project analyzes customer retention and subscription performance for a Software-as-a-Service (SaaS) business using Power BI.
+This project explores customer retention and subscription performance for a Software-as-a-Service (SaaS) business using Power BI.
 
-The objective was to transform raw subscription data into an interactive dashboard that helps business stakeholders understand customer retention, churn trends, recurring revenue, subscription plans, and renewal behavior.
+Using a publicly available SaaS subscription dataset from Kaggle, I transformed raw subscription data into an interactive dashboard that provides insights into customer retention, churn trends, recurring revenue, subscription plans, and renewal behavior.
 
 The project demonstrates an end-to-end business intelligence workflow, including data cleaning and transformation in Power Query, DAX calculations, and interactive dashboard development.
-
-Although this project began as a guided exercise, the dashboard layout, visual design, and several analytical components were customized to improve usability.
 
 ---
 
@@ -23,7 +23,7 @@ This dashboard answers questions such as:
 - Which subscription plans generate the highest Monthly Recurring Revenue (MRR)?
 - Which billing frequency is most popular?
 - What percentage of customers renew their subscriptions automatically?
-- How well are different customer cohorts retained over time?
+- How well are different customer cohorts retain customers over time?
 
 ---
 
@@ -32,14 +32,17 @@ This dashboard answers questions such as:
 - Power BI
 - Power Query
 - DAX
-- Data Modeling
 - Data Visualization
 
 ---
 
 ## Dataset
 
-The dataset contains SaaS subscription information including:
+The dataset used in this project was obtained from Kaggle.
+
+**Source:** *SaaS Subscription & Churn Analytics Dataset*
+
+It contains SaaS subscription information including:
 
 - Subscription ID
 - Customer ID
@@ -50,9 +53,13 @@ The dataset contains SaaS subscription information including:
 - Monthly Recurring Revenue (MRR)
 - Auto-Renew Status
 
+The dataset was selected because it closely matched the structure required for subscription cohort analysis while allowing the project to be completed using an independent public dataset.
+
 ---
 
-# Data Preparation - Power Query
+# Data Preparation (Power Query)
+
+The raw dataset was cleaned and transformed in Power Query to support cohort analysis and interactive reporting.
 
 The following transformations were completed:
 
@@ -61,27 +68,27 @@ The following transformations were completed:
 - Renamed columns for readability
 - Standardized Billing Frequency values
 - Standardized Auto-Renew values
-- Created Start Date (SOM) to group subscriptions into monthly cohorts
+- Created **Start Date (SOM)** to group subscriptions into monthly cohorts
 - Expanded subscriptions into monthly records
-- Created Month Number for retention analysis
-- Created Month Span to calculate subscriber activity across time
-- Created Plan Tier Sort column for custom report sorting
+- Created **Month Number** for retention analysis
+- Created **Month Span** to calculate subscriber activity across time
+- Created **Plan Tier Sort** for custom report sorting
 
-These transformations prepared the data for accurate retention calculations and interactive reporting.
+These transformations prepared the dataset for accurate retention calculations and dynamic reporting.
 
 ---
 
 # DAX Measures
 
-The dashboard uses custom DAX measures to calculate key business metrics:
+Custom DAX measures were created to calculate key business metrics used throughout the dashboard.
 
 - **Total Subscriptions** – Counts the total number of subscriptions.
 - **Active Subscriptions** – Counts subscriptions that are currently active.
 - **Churned Subscriptions** – Counts subscriptions that have ended.
 - **Churn Rate** – Calculates the percentage of subscriptions that have churned.
-- **Total Monthly Recurring Revenue (MRR)** – Calculates the total recurring revenue generated from active subscriptions.
+- **Total Monthly Recurring Revenue (MRR)** – Calculates total recurring revenue generated from active subscriptions.
 
-These measures update dynamically based on report filters and slicers.
+These measures respond dynamically to report filters and slicers.
 
 ---
 
@@ -99,7 +106,7 @@ The dashboard includes:
 
 ### Cohort Analysis Matrix
 
-Tracks customer retention by subscription month, allowing users to visualize how customer retention changes over time.
+Visualizes monthly customer retention by cohort, allowing retention trends to be tracked over time.
 
 ### Revenue Analysis
 
@@ -125,18 +132,18 @@ Users can filter the dashboard by:
 
 # Key Insights
 
-The dashboard reveals several important business insights:
+The dashboard highlights several business insights:
 
 - Enterprise plans generate the highest Monthly Recurring Revenue despite having fewer subscribers.
 - Most subscribers have automatic renewal enabled.
 - Customer retention gradually declines across successive cohort months, reflecting typical subscriber behavior in subscription-based businesses.
-- The cohort matrix allows stakeholders to quickly identify periods of stronger or weaker customer retention.
+- The cohort matrix allows retention performance to be compared across different subscription cohorts.
 
 ---
 
 # Dashboard Preview
 
-<img width="1487" height="952" alt="dashboard-preview" src="https://github.com/user-attachments/assets/979e0f85-2add-4822-ba13-919ae1febd6e" />
+<img width="1487" height="952" alt="dashboard-preview" src="https://github.com/user-attachments/assets/72e2746f-cc77-4357-a3d0-65483a9dda4d" />
 
 ---
 
@@ -145,9 +152,7 @@ The dashboard reveals several important business insights:
 This project demonstrates practical experience with:
 
 - Data Cleaning
-- Data Transformation
 - Power Query
-- Data Modeling
 - DAX
 - Cohort Analysis
 - Business Intelligence
@@ -155,3 +160,13 @@ This project demonstrates practical experience with:
 - Business Reporting
 - Data Visualization
 - Business Analysis
+
+# What I Learned
+
+Through this project, I strengthened my understanding of:
+
+- Power Query data transformation
+- DAX measure creation
+- Cohort analysis and retention reporting
+- Interactive dashboard design
+- Translating business questions into data visualizations
