@@ -40,7 +40,7 @@ This dashboard answers questions such as:
 
 The dataset used in this project was obtained from Kaggle.
 
-**Source:** *SaaS Subscription & Churn Analytics Dataset*
+**Source:** *[SaaS Subscription & Churn Analytics Dataset](https://www.kaggle.com/datasets/rivalytics/saas-subscription-and-churn-analytics-dataset?utm_source=chatgpt.com)*
 
 It contains SaaS subscription information including:
 
